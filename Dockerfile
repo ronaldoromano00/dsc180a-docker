@@ -29,7 +29,8 @@ USER jovyan
 
 # RUN conda install -y scikit-learn
 
-RUN conda install -c conda-forge geopandas
+# RUN conda install -c conda-forge geopandas
+RUN pip install --no-cache-dir networkx scipy geopandas babypandas
 RUN pip install --no-cache-dir babypandas
 RUN pip install --no-cache-dir networkx scipy
 
