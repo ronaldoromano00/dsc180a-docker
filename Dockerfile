@@ -33,6 +33,11 @@ USER jovyan
 RUN pip install --no-cache-dir networkx scipy geopandas babypandas
 RUN pip install --no-cache-dir babypandas
 RUN pip install --no-cache-dir networkx scipy
+RUN pip install --no-cache-dir pandas
+RUN pip install --no-cache-dir numpy
+RUN pip install --no-cache-dir scipy
+RUN pip install --no-cache-dir astral
+RUN pip install --no-cache-dir datetime
 
 # Override command to disable running jupyter notebook at launch
 # CMD ["/bin/bash"]
